@@ -55,7 +55,7 @@ const cardGenerator = () => {
         card.appendChild(back);
 
         card.addEventListener('click', (e) => {
-            card.classList.toggle('flipCard');
+            card.classList.add('flipCard');
             checkMatch(e);
         })
     });    
