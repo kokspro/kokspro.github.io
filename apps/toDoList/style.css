@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+body {
+    color: white;
+    background-color: black;
+    max-width: 480px;
+    min-height: 99vh;
+    text-align: center;
+    border: white solid 2px;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    border: solid white 1px;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 4px;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-bottom: -1px;
+    align-items: center;
+}
+
+
+.remove {
+    margin-right: 0;
+    margin-left: 10px;
+    background-color: red;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.checkbox {
+    margin-right: 0;
+    margin-left: 1;
+}
+
+
+#addButton, #input, #showHide {
+    padding: 3px;
+}
+#showHide {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 33%;
+}
+
+.toggle {
+    background-color: green;
+    color: black;
+}
