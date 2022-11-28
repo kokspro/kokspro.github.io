@@ -16,7 +16,8 @@ let weatherApp = {
         document.querySelector(".temperature").innerText = `${temp}°F / ${tempC}°C`;
         document.querySelector(".description").innerText = `${description}`;
         document.querySelector(".humidity").innerText = `Humidity: ${humidity}%`;  
-        document.querySelector(".weather").classList.remove("starting");  
+        document.querySelector(".weather").classList.remove("starting"); 
+        document.querySelector("input.search").value = "";  
     },
     search: function () {
         weatherApp.fetchWeather(document.querySelector("input.search").value);
