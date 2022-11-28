@@ -21,8 +21,6 @@ body {
     grid-gap: 1rem;
     margin-top: 1rem;
     perspective: 800px;
-    -webkit-perspective: 800px;
-
 }
 
 .card {
@@ -48,7 +46,6 @@ body {
 
 .flipCard {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
 }
 
 .reset {
