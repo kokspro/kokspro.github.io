@@ -26,6 +26,8 @@ body {
     position: relative;
     transform-style: preserve-3d;
     transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
 }
 
@@ -40,6 +42,7 @@ body {
     background-image: url("./images/questionmark1.png");
     background-size: cover;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .flipCard {
