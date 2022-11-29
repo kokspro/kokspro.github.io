@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(91,5,170);
+    background: radial-gradient(circle, rgba(91,5,170,1) 26%, rgba(0,212,255,1) 95%); 
+}
+
+.card {
+    border-radius: 3rem;
+    background: lavenderblush;
+}
+ .card .card-header {
+    border-radius: 3rem 3rem 0 0;
+    background: wheat;
+}
+.card img {
+    max-height: 600px;
+}
