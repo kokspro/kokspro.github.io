@@ -1,3 +1,4 @@
+// Grabbing constants for construction
 const container = document.querySelector(".container");
 const attemptsCount = document.querySelector("span");
 const resetButton = document.querySelector(".reset");
@@ -5,11 +6,12 @@ let attempts = 0;
 
 attemptsCount.innerHTML = attempts;
 
+// Adding reset function
 resetButton.addEventListener('click', () => {
     location.reload();
 });
 
-
+// Creating picture object array
 const getData = () => [
     { imgSrc: "./images/Forest1.jpg", name: "forest1"},
     { imgSrc: "./images/Forest2.jpg", name: "forest2"},
@@ -33,12 +35,14 @@ const getData = () => [
     { imgSrc: "./images/sky1.jpg", name: "sky1"}
 ];
 
+// Randomizing card order function
 const randomize = () => {
     const cardData = getData();
     cardData.sort(() => Math.random() - 0.5);
     return cardData;
 };
 
+// Creating cards and placing on board
 const cardGenerator = () => {
     const cardData = randomize();
     cardData.forEach((item) => {
@@ -61,6 +65,7 @@ const cardGenerator = () => {
     });    
 };
 
+// Check for match function
 const checkMatch = (e) => {
     const clickedCard = e.target;
     clickedCard.classList.add('flipped');
@@ -86,5 +91,5 @@ const checkMatch = (e) => {
     
 };
 
-
+// Start game
 cardGenerator();

@@ -1,3 +1,4 @@
+/* Universal */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     -webkit-box-sizing: border-box;
 }
 
+/* Elements Start */
 body {
     height: 100vh;
     display: flex;
@@ -13,7 +15,9 @@ body {
     flex-direction: column;
     background: linear-gradient(lightblue, black);
 }
+/* Elements End */
 
+/* Class Start */
 .container {
     display: grid;
     grid-template-columns: repeat(5, 8rem);
@@ -56,3 +60,5 @@ body {
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
+
+/* Class End */
