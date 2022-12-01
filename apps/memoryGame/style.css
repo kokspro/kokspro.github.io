@@ -30,6 +30,7 @@ body {
 
 .card {
     position: relative;
+    display: flex;
     transform-style: preserve-3d;
     transition: all 1.5s;
     -webkit-transform-style: preserve-3d;
@@ -38,6 +39,7 @@ body {
 }
 
 .back,.face {
+    display: flex;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -45,6 +47,7 @@ body {
 }
 
 .back {
+    display: flex;
     background-image: url("./images/questionmark1.png");
     background-size: cover;
     backface-visibility: hidden;
@@ -52,7 +55,6 @@ body {
 }
 
 .flipCard {
-    z-index: -1;
     transform: rotateY(180deg);
     -webkit-transform: rotateY('180deg');
 }
@@ -62,10 +64,6 @@ body {
     padding: .3rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
-}
-
-.flipped {
-    z-index: -1;
 }
 
 /* Class End */
