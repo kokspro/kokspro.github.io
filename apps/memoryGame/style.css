@@ -52,6 +52,7 @@ body {
 }
 
 .flipCard {
+    z-index: -1;
     transform: rotateY(180deg);
     -webkit-transform: rotateY('180deg');
 }
@@ -61,6 +62,10 @@ body {
     padding: .3rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
+}
+
+.flipped {
+    z-index: -1;
 }
 
 /* Class End */
