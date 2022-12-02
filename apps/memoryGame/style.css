@@ -14,7 +14,7 @@ body {
     align-items: center;
     flex-direction: column;
     /* background: linear-gradient(lightblue, black); */
-    background: blue;
+    background: orange;
 }
 /* Elements End */
 
@@ -57,6 +57,7 @@ body {
     transform: rotateY(180deg);
     -webkit-transform: rotateY('180deg');
     z-index: -1;
+    /* Z-index maybe */
 }
 
 .reset {
