@@ -69,6 +69,8 @@ const cardGenerator = () => {
 const checkMatch = (e) => {
     const clickedCard = e.target;
     clickedCard.classList.add('flipped');
+    // Trying to debug?
+    
     const flippedCards = document.querySelectorAll('.flipped');
     if ( flippedCards.length === 2) {
         if ( flippedCards[0].getAttribute('name') === flippedCards[1].getAttribute('name')) {
