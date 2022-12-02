@@ -14,7 +14,7 @@ body {
     align-items: center;
     flex-direction: column;
     /* background: linear-gradient(lightblue, black); */
-    background: orange;
+    background: yellowgreen;
 }
 /* Elements End */
 
@@ -51,12 +51,13 @@ body {
     background-size: cover;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    z-index: 1;
 }
 
 .flipCard {
     transform: rotateY(180deg);
     -webkit-transform: rotateY('180deg');
-    z-index: -1;
+    /* z-index: -1; */
     /* Z-index maybe */
 }
 
