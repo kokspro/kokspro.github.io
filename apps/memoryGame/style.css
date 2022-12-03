@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(lightblue, violet);
+    background: linear-gradient(lightblue, black);
 }
 /* Elements End */
 
@@ -29,7 +29,6 @@ body {
 .card {
     position: relative;
     transform-style: preserve-3d;
-    transition: all 1.5s;
     -webkit-transform-style: preserve-3d;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
 }
