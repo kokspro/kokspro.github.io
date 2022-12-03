@@ -31,9 +31,9 @@ body {
     position: relative;
     display: inline-block;
     transform-style: preserve-3d;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform all 1.5s;
+    /* -webkit-transition: -webkit-transform all 1.5s; */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
 }
 
@@ -51,7 +51,7 @@ body {
     background-size: cover;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .flipCard {
