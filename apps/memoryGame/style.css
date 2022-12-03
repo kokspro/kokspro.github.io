@@ -32,7 +32,7 @@ body {
     transform-style: preserve-3d;
     transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transform-style: preserve-3d;
-    -webkit-transform-style: none;
+    -webkit-transform-style: -webkit- transition none;
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
 }
