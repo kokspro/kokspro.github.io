@@ -46,8 +46,8 @@ body header div nav ul {
   list-style-type: none;
 }
 body header div nav ul li {
+  margin-left: 5px;
   padding: 0.5rem;
-  margin-left: 0.2rem;
   text-transform: uppercase;
   font-size: 1rem;
 }
