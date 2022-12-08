@@ -1,22 +1,225 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: rgb(91,5,170);
-    background: radial-gradient(circle, rgba(91,5,170,1) 26%, rgba(0,212,255,1) 95%); 
+  position: relative;
+  background-color: rgb(51, 51, 51);
+  overflow-x: hidden;
+}
+body header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  background-color: #220743;
+  z-index: 1;
+}
+body header div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 80px;
+}
+body header div h1 {
+  font-size: 40px;
+}
+body header div nav input {
+  display: none;
+}
+body header div nav label {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  float: right;
+  line-height: 1rem;
+  cursor: pointer;
+}
+body header div nav ul {
+  display: flex;
+  list-style-type: none;
+}
+body header div nav ul li {
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+body header div nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+body header div nav ul li:hover {
+  border: 1px solid;
+  border-color: rgb(39, 37, 37) darkgray darkgray rgb(39, 37, 37);
+  background-color: #46128a;
 }
 
-.card {
-    border-radius: 3rem;
-    background: lavenderblush;
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 2s;
 }
- .card .card-header {
-    border-radius: 3rem 3rem 0 0;
-    background: wheat;
+
+.card-1 {
+  width: 80%;
+  margin: 5rem auto;
+  background: linear-gradient(to right bottom, #220743, black);
+}
+
+.card-2 {
+  width: 80%;
+  margin: 5rem auto;
+  background: linear-gradient(to right bottom, #06beb6, black);
+}
+
+.card-3 {
+  width: 80%;
+  margin: 5rem auto;
+  background: linear-gradient(to right bottom, #021c72, black);
+}
+
+.card-4 {
+  width: 80%;
+  margin: 5rem auto;
+  background: linear-gradient(to right bottom, #062e08, black);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 90vh;
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+
+.contentContainer {
+  padding: 130px 0;
+  background: linear-gradient(to bottom right, darkgray, black);
+  width: 100vh;
+}
+
+.cardContainer {
+  padding: 1.5rem;
+  border-radius: 3rem;
+  box-shadow: 1rem 1rem 2.3rem black;
+  max-width: 750px;
+}
+
+.intro1 {
+  opacity: 0;
+  -webkit-animation: 3s ease 1s testing;
+          animation: 3s ease 1s testing;
+}
+
+.intro2 {
+  opacity: 0;
+  -webkit-animation: 3s ease 3s testing;
+          animation: 3s ease 3s testing;
+}
+
+.intro3 {
+  opacity: 0;
+  -webkit-animation: 3s ease 5s testing;
+          animation: 3s ease 5s testing;
+}
+
+@-webkit-keyframes testing {
+  75% {
+    opacity: 1;
+  }
+}
+
+@keyframes testing {
+  75% {
+    opacity: 1;
+  }
+}
+.card {
+  display: grid;
+  border: solid 3px #062e08;
+  width: 90%;
+  margin: 4rem auto;
+  border-radius: 2rem;
+  background: rgb(1, 54, 47);
+  max-width: 600px;
+}
+.card h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
 }
 .card img {
-    max-height: 600px;
+  margin: 20px auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: solid 1rem #062e08;
+  border-radius: 3rem;
 }
+.card p {
+  padding: 1rem 2rem;
+  text-align: center;
+  color: white;
+  margin: 0 0 1rem;
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1.5rem 0.5rem 2rem;
+}
+.card div button {
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  background-color: #220743;
+  color: white;
+  border: solid 1px #062e08;
+}
+.card div button:hover {
+  background-color: #46128a;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body header div {
+    width: 95%;
+  }
+  body header div h1 {
+    font-size: 30px;
+  }
+  body header div nav input:checked ~ ul {
+    right: 0rem;
+  }
+  body header div nav label {
+    display: block;
+  }
+  body header div nav ul {
+    position: fixed;
+    display: block;
+    flex-direction: column;
+    right: -100%;
+    background-color: #220743;
+    text-align: left;
+    transition: all 0.5s;
+    top: 80px;
+  }
+  body header div nav ul li {
+    padding: 0.8rem 3rem 0.8rem 0.8rem;
+  }
+  .card {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
