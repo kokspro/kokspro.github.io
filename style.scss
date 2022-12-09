@@ -71,11 +71,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     color: $textColor;
     height: 90vh;
     border-radius: 50%;
     font-size: 2.5rem;
+    text-align: center;
 }
 .intro1 {
     opacity: 0;
@@ -122,7 +122,7 @@ body {
         margin: 20px auto;
         max-width: 100%;
         max-height: 100%;
-        border: solid 1rem $tertiaryColor;
+        border: solid 0.5rem $tertiaryColor;
         border-radius: 3rem;
     }
     p {
@@ -220,5 +220,22 @@ body {
     }
     .card {
         width: 80%;
+    }
+}
+@media (max-width: 420px) {
+    body {
+        header {
+            div {
+                width: 100%;
+            }
+        }
+    }
+    .cardContainer {
+        padding: 0.5rem;
+    }
+    .card {
+        div {
+            margin: 10px;
+        }
     }
 }

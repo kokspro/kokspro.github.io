@@ -69,6 +69,7 @@ body header div nav ul li:hover {
   height: 90vh;
   border-radius: 50%;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .intro1 {
@@ -130,7 +131,7 @@ body header div nav ul li:hover {
   margin: 20px auto;
   max-width: 100%;
   max-height: 100%;
-  border: solid 1rem #062e08;
+  border: solid 0.5rem #062e08;
   border-radius: 3rem;
 }
 .card p {
@@ -225,5 +226,16 @@ body header div nav ul li:hover {
   }
   .card {
     width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  body header div {
+    width: 100%;
+  }
+  .cardContainer {
+    padding: 0.5rem;
+  }
+  .card div {
+    margin: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
