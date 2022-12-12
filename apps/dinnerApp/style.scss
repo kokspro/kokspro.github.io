@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(163, 163, 163);
+    header {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+}
+.card {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    h1 {
+        padding: 0.3rem;
+    }
+    form {
+        padding: 0.3rem;
+        input {
+            padding: 0.15rem;
+        }
+    }
+    ul {
+        margin: 1rem auto;
+        width: 90%;
+        list-style-type: none;
+        li {
+            display: flex;
+            padding: 0.3rem;
+            margin: 0.1rem;
+            justify-content: space-between;
+        }
+    }
+    h2 {
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+    }
+}
+.protein {
+    background: rgb(224, 45, 84);
+    li, h2{
+        background: pink;
+    }
+}
+.carbohydrate {
+    background: orange;
+    li, h2 {
+        background: rgb(238, 238, 96);
+    }
+}
+.vegetable {
+    background: green;
+    li, h2 {
+        background: palegreen;
+    }
+}
+.randomizer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    button {
+        padding: 0.3rem;
+    }
+}
