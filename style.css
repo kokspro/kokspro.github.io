@@ -16,6 +16,7 @@ body header {
   width: 100%;
   color: white;
   background-color: #220743;
+  box-shadow: 0rem 1rem 2.5rem black;
   z-index: 1;
 }
 body header div {
@@ -214,6 +215,7 @@ body header div nav ul li:hover {
     flex-direction: column;
     right: -100%;
     background-color: #220743;
+    box-shadow: -0.5rem 1rem 2.3rem black;
     text-align: left;
     transition: all 0.5s;
     top: 80px;

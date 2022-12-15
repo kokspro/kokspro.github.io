@@ -19,6 +19,7 @@ body {
         width: 100%;
         color: $textColor;
         background-color: $primaryColor;
+        box-shadow: 0rem 1rem 2.5rem black;
         z-index: 1;
         div {
             display: flex;
@@ -204,6 +205,7 @@ body {
                         flex-direction: column;
                         right: -100%;
                         background-color: $primaryColor;
+                        box-shadow: -0.5rem 1rem 2.3rem black;
                         text-align: left;
                         transition: all .5s;
                         top: 80px;
