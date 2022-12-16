@@ -48,18 +48,21 @@ body {
 }
 .protein {
     background: rgb(224, 45, 84);
+    align-self: start;
     li, h2{
         background: pink;
     }
 }
 .carbohydrate {
     background: orange;
+    align-self: start;
     li, h2 {
         background: rgb(238, 238, 96);
     }
 }
 .vegetable {
     background: green;
+    align-self: start;
     li, h2 {
         background: palegreen;
     }
@@ -70,5 +73,28 @@ body {
     margin-bottom: 2rem;
     button {
         padding: 0.3rem;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 999px) {
+    .wrapper {
+        display: flex;
+        gap: 1rem;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin: auto;
+        justify-content: center;
     }
 }

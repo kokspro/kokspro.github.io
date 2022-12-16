@@ -118,7 +118,7 @@ body header div nav ul li:hover {
   display: grid;
   border: solid 3px #062e08;
   width: 90%;
-  margin: 4rem auto;
+  margin: 2rem auto;
   border-radius: 2rem;
   background: rgb(1, 54, 47);
   max-width: 600px;
@@ -196,6 +196,21 @@ body header div nav ul li:hover {
   transform: translateX(0);
 }
 
+.about-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin: 10%;
+}
+.about-wrapper img {
+  border: orange 1px solid;
+  max-width: 50%;
+}
+.about-wrapper p {
+  color: orange;
+  justify-content: left;
+  padding: 2rem;
+}
+
 @media (max-width: 768px) {
   body header div {
     width: 95%;
@@ -228,6 +243,17 @@ body header div nav ul li:hover {
   }
   .card {
     width: 80%;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-wrapper img {
+    margin: auto;
+  }
+  .about-wrapper p {
+    text-align: center;
+    padding: 2rem;
   }
 }
 @media (max-width: 420px) {

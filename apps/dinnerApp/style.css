@@ -50,6 +50,7 @@ body header {
 
 .protein {
   background: rgb(224, 45, 84);
+  align-self: start;
 }
 .protein li, .protein h2 {
   background: pink;
@@ -57,6 +58,7 @@ body header {
 
 .carbohydrate {
   background: orange;
+  align-self: start;
 }
 .carbohydrate li, .carbohydrate h2 {
   background: rgb(238, 238, 96);
@@ -64,6 +66,7 @@ body header {
 
 .vegetable {
   background: green;
+  align-self: start;
 }
 .vegetable li, .vegetable h2 {
   background: palegreen;
@@ -76,4 +79,26 @@ body header {
 }
 .randomizer button {
   padding: 0.3rem;
+}
+
+@media (min-width: 625px) and (max-width: 999px) {
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: auto;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
