@@ -22,6 +22,7 @@ var dinnerApp = {
         if (dinnerApp.protInput.value != "") {
             const item = document.createElement('li');
             item.innerHTML = dinnerApp.protInput.value;
+            item.innerHTML = item.innerHTML.charAt(0).toUpperCase() + item.innerHTML.slice(1);
             item.classList.add('prot');
             dinnerApp.remove(item);
             dinnerApp.protList.appendChild(item);
@@ -32,6 +33,7 @@ var dinnerApp = {
         if (dinnerApp.carbInput.value != "") {
             const item = document.createElement('li');
             item.innerHTML = dinnerApp.carbInput.value;
+            item.innerHTML = item.innerHTML.charAt(0).toUpperCase() + item.innerHTML.slice(1);
             item.classList.add('carb');
             dinnerApp.remove(item);
             dinnerApp.carbList.appendChild(item);
@@ -42,6 +44,7 @@ var dinnerApp = {
         if (dinnerApp.vegeInput.value != "") {
             const item = document.createElement('li');
             item.innerHTML = dinnerApp.vegeInput.value;
+            item.innerHTML = item.innerHTML.charAt(0).toUpperCase() + item.innerHTML.slice(1);
             item.classList.add('vege');
             dinnerApp.remove(item);
             dinnerApp.vegeList.appendChild(item);
