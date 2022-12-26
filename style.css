@@ -199,11 +199,11 @@ body header div nav ul li:hover {
 .about-wrapper {
   display: flex;
   gap: 2rem;
-  margin: 10%;
+  margin: 3rem;
 }
 .about-wrapper img {
   border: orange 1px solid;
-  max-width: 50%;
+  max-width: 400px;
 }
 .about-wrapper p {
   color: orange;
@@ -256,7 +256,7 @@ body header div nav ul li:hover {
     padding: 2rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   body header div {
     width: 100%;
   }
@@ -265,5 +265,8 @@ body header div nav ul li:hover {
   }
   .card div {
     margin: 10px;
+  }
+  .about-wrapper img {
+    max-width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

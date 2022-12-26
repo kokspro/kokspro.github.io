@@ -185,10 +185,10 @@ body {
 .about-wrapper {
     display: flex;
     gap: 2rem;
-    margin: 10%;
+    margin: 3rem;
     img {
         border: orange 1px solid;
-        max-width: 50%;
+        max-width: 400px;
     }
     p {
         color: orange;
@@ -248,7 +248,7 @@ body {
         }
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     body {
         header {
             div {
@@ -262,6 +262,11 @@ body {
     .card {
         div {
             margin: 10px;
+        }
+    }
+    .about-wrapper {
+        img {
+            max-width: 200px;
         }
     }
 }
