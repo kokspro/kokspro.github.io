@@ -22,6 +22,7 @@ var toDoList = {
             checkBox.setAttribute("class", "checkbox");
             checkBox.addEventListener("click", toDoList.checked);
             li.innerHTML = inputValue;
+            li.innerHTML = li.innerHTML.charAt(0).toUpperCase() + li.innerHTML.slice(1);
             removeButton.innerHTML = "Remove";
             li.appendChild(checkBox);
             li.appendChild(removeButton);
