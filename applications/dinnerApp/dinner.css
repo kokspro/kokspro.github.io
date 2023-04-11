@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(163, 163, 163);
+}
+body header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.card {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card h1 {
+  padding: 0.3rem;
+}
+.card form {
+  padding: 0.3rem;
+}
+.card form input {
+  padding: 0.15rem;
+}
+.card ul {
+  margin: 1rem auto;
+  width: 90%;
+  list-style-type: none;
+}
+.card ul li {
+  display: flex;
+  padding: 0.3rem;
+  margin: 0.1rem;
+  justify-content: space-between;
+}
+.card h2 {
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  width: 90%;
+  text-align: center;
+}
+
+.protein {
+  background: rgb(224, 45, 84);
+  align-self: start;
+}
+.protein li, .protein h2 {
+  background: pink;
+}
+
+.carbohydrate {
+  background: orange;
+  align-self: start;
+}
+.carbohydrate li, .carbohydrate h2 {
+  background: rgb(238, 238, 96);
+}
+
+.vegetable {
+  background: green;
+  align-self: start;
+}
+.vegetable li, .vegetable h2 {
+  background: palegreen;
+}
+
+.randomizer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.randomizer button {
+  padding: 0.3rem;
+}
+
+@media (min-width: 625px) and (max-width: 999px) {
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: auto;
+    justify-content: center;
+  }
+}

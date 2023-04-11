@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+
+.nav__container {
+    list-style-type: none;
+    position: fixed;
+    top: 9.3rem;
+    left: 0;
+    width: 100vw;
+    font-size: 5rem;
+    display: none;
+    background: darken($backgroundColor, 10%);
+}
+
+.nav__link {
+    margin: 1.3rem 0;
+    height: 8vh;
+    text-align: center;
+    background: $backgroundColor;
+    font-weight: 400;
+    border: 3px solid $secondaryColor;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background: darken($backgroundColor, 25%);
+        border: solid 3px $secondaryInverse;
+        color: $secondaryInverse;
+        transition: all .3s
+    }
+}
+
+.fa-bars {
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#check {
+    display: none;
+    &:checked ~ .nav__container{
+        display: block;
+    }
+}

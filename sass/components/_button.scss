@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    color: $secondaryColor;
+    border: solid 3px $secondaryColor;
+    border-radius: 3rem;
+
+    &--primary {
+        background-color: $backgroundColor;
+
+        &:hover {
+            background: darken($backgroundColor, 25%);
+            border: solid 3px $secondaryInverse;
+            color: $secondaryInverse;
+            transition: all .3s
+        }
+    }
+
+    &__card {
+        margin: 0.5rem 5vw;
+    }
+}
+
+
+
+
+

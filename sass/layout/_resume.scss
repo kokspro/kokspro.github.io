@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+.resume__image {
+    margin: 0 auto;
+    border: 3px solid $secondaryColor;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.resume__container {
+    display: flex;
+}

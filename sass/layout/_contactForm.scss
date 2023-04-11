@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+
+.contact__form {
+    font-size: 3rem;
+    color: $secondaryColor;
+    text-align: center;
+    margin: 3rem auto;
+
+
+    &__email {
+        font-size: 2rem;
+    }
+
+    &__email, &__textArea {
+        margin: 2rem 0 4rem;
+        color: $secondaryColor;
+        padding: 1rem;
+        border: 3px solid $secondaryColor;
+        background-color: $backgroundColor;
+
+        &:focus {
+            background: darken($backgroundColor, 25%);
+            color: $secondaryInverse;
+            border: 3px solid $secondaryInverse;
+        }
+    }
+}
+

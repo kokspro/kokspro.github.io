@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Koks - Front End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/71993d06eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header class="header">
+            <h1 class="header__name">William Koks</h1>
+            <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul class="nav__container">
+                        <li class="nav__link" id="tabAbout" name="tabs">About</li>
+                        <li class="nav__link" id="tabProjects" name="tabs">Projects</li>
+                        <li class="nav__link" id="tabResume" name="tabs">Resume</li>
+                        <li class="nav__link" id="tabContact" name="tabs">Contact</li>
+            </ul>    
+        </header>
+        <main class="main" id="tabAbout__content">
+            <div class="card">
+                <h2 class="card__title">About Me</h2>
+                <img class="headshot" src="../images/Headshot.jpg" alt="Headshot of me">
+                <p class="card__content">
+                    This is me, and I am a Front End Developer. </br>
+                    My current and ever growing skillset includes:
+                    <ul class="card__content__list">
+                        <li>JavaScript * TypeScript</li>
+                        <li>CSS * SASS</li>
+                        <li>Bootstrap * Tailwind</li>
+                        <li>HTML5</li>
+                        <li>Git</li>
+                        <li>Google-Fu</li>
+                    </ul>
+                </p>
+            </div>
+        </main>
+        <main class="main hidden" id="tabProjects__content">
+            <div class="card">
+                <h2 class="card__title">To-Do-List Application</h2>
+                <img class="project__image" src="../images/To-Do-List-Resized.png" alt="Picture of the To-Do-List App">
+                <p class="card__content">
+                    <a href="../applications/toDoList/index.html" target="_blank"><button class="btn btn--primary btn__card">Try It!</button></a>
+                    <a href="https://github.com/kokspro/todolist" target="_blank"><button class="btn btn--primary btn__card">Git Code</button></a>
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="card__title">Whats For Dinner Application</h2>
+                <img class="project__image" src="../images/Whats-For-Dinner-Resized.png" alt="Picture of the Whats For Dinner App">
+                <p class="card__content">
+                    <a href="../applications/dinnerApp/index.html" target="_blank"><button class="btn btn--primary btn__card">Try It!</button></a>
+                    <a href="https://github.com/kokspro/Whats-For-Dinner" target="_blank"><button class="btn btn--primary btn__card">Git Code</button></a>
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="card__title">Memory Game</h2>
+                <img class="project__image" src="../images/Memory-Game-Resized.png" alt="Picture of the Memory Game App">
+                <p class="card__content">
+                    <a href="../applications/memoryGame/index.html" target="_blank"><button class="btn btn--primary btn__card">Try It!</button></a>
+                    <a href="https://github.com/kokspro/memory-game" target="_blank"><button class="btn btn--primary btn__card">Git Code</button></a>
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="card__title">Weather App</h2>
+                <img class="project__image" src="../images/Weather-App-Resized.png" alt="Picture of the Weather App">
+                <p class="card__content">
+                    <a href="../applications/weatherApp/index.html" target="_blank"><button class="btn btn--primary btn__card">Try It!</button></a>
+                    <a href="https://github.com/kokspro/weather-app" target="_blank"><button class="btn btn--primary btn__card">Git Code</button></a>
+                </p>
+            </div>
+        </main>
+        <main class="main hidden" id="tabResume__content">
+            <div class="card">
+                <h2 class="card__title">RESUME</h2>
+                <div class="resume__container">
+                    <img class="resume__image" src="../images/Resume.png" alt="Resume">
+                </div>
+            </div>
+        </main>
+        <main class="main hidden" id="tabContact__content">
+            <div class="card">
+                <h2 class="card__title">Contact</h2>
+                    <form  class="contact__form" action="https://formspree.io/f/xwkjwozo" method="POST">
+                    <label>
+                        Your E-mail:  <br/>
+                        <input class="contact__form__email" type="email" name="email"> <br/>
+                    </label>
+                    <label>
+                        Your message: <br/>
+                        <textarea class="contact__form__textArea" name="message" rows="5" cols="40"></textarea> <br/>
+                    </label>
+                    <button class="btn btn--primary" type="submit">Submit Form</button>
+                    </form>
+            </div>
+        </main>
+    </body>
+</html>
